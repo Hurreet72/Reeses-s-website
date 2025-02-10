@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: rgb(228, 80, 26);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 280px;
+}
+
+.logo {
+    height: 200px;
+    width: auto;
+}
+
+nav a {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(37, 27, 27);
+    padding: 0px 10px;
+    font-size: 30px;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+nav a:hover {
+    color: rgb(29, 29, 249);
+}
+
+
+.moto 
+{
+    height: 700px;
+    width: 50%;
+   margin-bottom: 10px;
+    float: right;
+    overflow: visible;
+}
+h1 {
+    color: rgb(228, 80, 26);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    margin-top: 300px;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+p {
+    margin: 20px 0;
+    text-align: center;
+    max-width: 600px;
+    margin-top: 100px;
+    margin-bottom: 180px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.no1{
+    margin: 1px;
+    padding: 0px;
+    align-items: right;
+    float: right;
+    float: inline-end;
+    padding-right: 100px;
+}
+.no2{
+  margin-left: 50px;
+  padding: 0px;
+  padding-left: 50px;
+}
+.end{
+    margin-top: 1px;
+    padding:10px;
+    text-align: center;
+    color: aliceblue;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 27%;
+    height: auto;
+    align-items: center;
+    margin-left: 32%;
+}
+.part{
+    background-color: rgb(73, 40, 27);
+    
+}
+.colo{
+    background-color: rgb(237, 176, 149);
+}

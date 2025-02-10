@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Order</title>
+    <link rel="stylesheet" href="order.css">
+    <style>
+        .total-amount {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img class="logo" src="Reese's_logo.svg.png" alt="Reese's Logo">
+        <a class="home" href="main.html">Home</a>
+        <a class="about" href="about.html">About</a>
+        <a class="order" href="order.html">Order</a>
+        <a class="care" href="care.html">Contact Us</a>
+    </nav>
+    <div class="col">
+        <h2>ORDER NOW!!!!</h2>
+    <form id="orderForm" action="submit_order.php" method="post">
+        <p>
+            NAME: <input type="text" name="name" required>
+        </p>
+        <p>
+            GENDER: 
+            <input type="radio" name="gender" id="male" value="male" required>Male
+            <input type="radio" name="gender" id="female" value="female">Female
+            <input type="radio" name="gender" id="others" value="others">Others
+        </p>
+        <p>
+            PHONE NUMBER: <input type="number" name="phone" id="phone" required>
+        </p>
+        <p>
+            ADDRESS: <textarea name="address" cols="70%" rows="2%" required></textarea>
+        </p>
+        <p>
+            PRODUCT SELECTION:
+            <select name="product" id="product" required>
+                <option value="" data-price="0">Select a product</option>
+                <option value="reeses_cups" data-price="120">Reese's Cups (₹120 each)</option>
+                <option value="reeses_pieces" data-price="80">Reese's Pieces (₹80 each)</option>
+                <option value="reeses_sticks" data-price="150">Reese's Sticks (₹150 each)</option>
+                <option value="reeses_puffs" data-price="200">Reese's Puffs (₹200 each)</option>
+            </select>
+        </p>
+        <p>
+            QUANTITY: <input type="number" id="quantity" name="quantity" min="1" required>
+        </p>
+        <p class="total-amount" id="totalAmount">Total Amount: ₹0.00</p>
+        <p>
+            MODE OF PAYMENT:
+            <select name="pay" required>
+                <option value="">Select</option>
+                <option value="cod">Cash on Delivery</option>
+                <option value="cc">Credit Card</option>
+                <option value="dc">Debit Card</option>
+                <option value="qr">QR Code</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" id="pay" value="Pay now">
+        </p>
+        <p>
+            <input type="submit" id="order" value="Place Order">
+        </p>
+    </form>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E4501a" fill-opacity="1" d="M0,224L48,197.3C96,171,192,117,288,117.3C384,117,480,171,576,202.7C672,235,768,245,864,261.3C960,277,1056,299,1152,272C1248,245,1344,171,1392,133.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
+    <script>
+        // Function to calculate the total amount in rupees
+        function calculateTotal() {
+            var productSelect = document.getElementById('product');
+            var quantityInput = document.getElementById('quantity');
+            var totalAmountElement = document.getElementById('totalAmount');
+
+            // Get the selected product's price
+            var selectedOption = productSelect.options[productSelect.selectedIndex];
+            var price = parseFloat(selectedOption.getAttribute('data-price'));
+
+            // Get the quantity selected
+            var quantity = parseInt(quantityInput.value);
+
+            // Calculate the total amount
+            var totalAmount = price * quantity;
+
+            // Display the total amount in rupees
+            totalAmountElement.textContent = 'Total Amount: ₹' + totalAmount.toFixed(2);
+        }
+
+        let money= document.getElementById('pay');
+        money.addEventListener('click',click);
+        function click(){
+            alert('THANK YOU! FOR PAYING');
+        }
+
+        // Add event listeners to the product select and quantity input
+        document.getElementById('product').addEventListener('change', calculateTotal);
+        document.getElementById('quantity').addEventListener('input', calculateTotal);
+
+        // Initial calculation on page load
+        calculateTotal();
+
+        document.getElementById('orderForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            // Optionally, process form data here or via AJAX
+            window.location.href = 'placed.html'; // Redirect to the confirmation page
+        });
+    </script>
+    </div>
+</body>
+</html>

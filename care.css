@@ -1,0 +1,117 @@
+nav {
+    background-color: rgb(228, 80, 26);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 180px;
+}
+
+.logo {
+    height: 200px;
+    width: auto;
+}
+
+nav a {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(37, 27, 27);
+    padding: 0px 10px;
+    font-size: 30px;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+nav a:hover {
+    color: rgb(29, 29, 249);
+}
+h1{
+    margin-top: 200px;
+    text-align: left;
+    padding-left: 400px;
+    padding-top: 90px;
+}
+h3{
+    text-align: center;
+    padding-top: 80px;
+    padding: 15px;
+    margin-top: 90px;
+    width: 50%;
+}
+.dabba1{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(75, 20, 20);
+    color: aliceblue;
+    align-items: center;
+    overflow: visible;
+}
+.girl{
+    height: 350px;
+    float: right;
+     margin-right: 50px;
+     width: auto;
+      
+}
+#fa{
+    align-items: center;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(228, 80, 26);
+    margin-left: 400px;
+    margin-top: 150px;
+}
+.fa:hover{
+    cursor: pointer;
+    color: aliceblue;
+}
+.end{
+    width: 400px;
+    margin-top: 150px;
+    align-items: center;
+    margin-left: 35%;
+}
+.insta{
+    width: 50px;
+    height: auto;
+    margin-left: 43%;
+    margin-top: 50px;
+}
+.facebook{
+    width: 50px;
+    height: auto;
+    margin-left: 3%;
+    margin-top: 50px;
+}
+.twitter{
+    width: 50px;
+    height: auto;
+    margin-left: 3%;
+    margin-top: 50px;
+}
+.container{
+    background-color: rgb(238, 183, 159);
+}
+.mail{
+    width: 60px;
+    height: auto;
+    margin-left: 46%;
+    margin-top: 40px;
+}
+li{
+    font-size: 20px;
+    margin-left: 42%;
+}
+li:hover{
+    color: rgb(19, 104, 30);
+    cursor: pointer;
+}
+.insta,.twitter,.facebook:hover{
+color: red;
+cursor: pointer;
+}
+   

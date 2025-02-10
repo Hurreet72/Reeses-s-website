@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Reese's</title>
+    <link rel="stylesheet" href="care.css">
+</head>
+<body>
+    <div class="container">
+    <nav>
+        <img class="logo" src="Reese's_logo.svg.png">
+        <a class="home" href="main.html">Home</a>
+        <a class="about" href="about.html">About</a>
+        <a class="order" href="order.html">Order</a>
+        <a class="care" href="care.html">Contact us</a>
+    </nav>
+    
+    <div class="dabba1">
+    <h1>Contact us</h1>
+    <img class="girl" src="Screenshot 2024-07-13 165412.png">
+    <h3>The Reese's Company is dedicated to answering your questions. Have a question about ingredients or you can’t find a specific reese's product? Check our FAQs section or find in-store products with our Product Locator. Still need something? You can always email or call us.</h3>
+    <button id="fa">View FAQ's</button>
+    </div>
+    <div class="dabba2">
+        <img class="end" src="Reese's_logo.svg.png">
+        <div class="icons">
+            <img class="insta" src="instagram.png">
+            <img class="facebook" src="facebook.png">
+            <img class="twitter" src="twitter.png">
+        </div>
+        <ul>
+        <img class="mail" src="email.png">
+        </ul>
+        <li>
+            reeses_official@gmai.com
+        </li>
+        <li>
+            cutomerreeses@gmail.com
+        </li>
+        <li>
+            peanutbutter@gmail.com
+        </li>
+        <li>
+            thesaltycup@gmail.com
+        </li>
+        <li>
+            thesweetcup@gmail.com
+        </li>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E4501a" fill-opacity="1" d="M0,224L48,197.3C96,171,192,117,288,117.3C384,117,480,171,576,202.7C672,235,768,245,864,261.3C960,277,1056,299,1152,272C1248,245,1344,171,1392,133.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+</div>
+    </div>
+    <script>
+        let list= document.getElementById("fa");
+        list.addEventListener('click',view);
+        function view(){
+            window.open('http://127.0.0.1:5500/faq.html')
+        }
+    </script>
+</body>
+</html>

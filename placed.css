@@ -1,0 +1,18 @@
+.img{
+  margin-left: 30%;
+  width: 43%;
+  padding-top: 20px;
+}
+h1{
+    text-decoration: wavy;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+*{
+    background-color: rgb(238, 183, 159);
+}
+.img1{
+  width: 100px;
+  margin-left: 46%;
+}

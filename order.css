@@ -1,0 +1,57 @@
+nav {
+    background-color: rgb(228, 80, 26);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 180px;
+}
+
+.logo {
+    height: 200px;
+    width: auto;
+}
+
+nav a {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(37, 27, 27);
+    padding: 0px 10px;
+    font-size: 30px;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+nav a:hover {
+    color: rgb(29, 29, 249);
+}
+form{
+    margin-top: 300px;
+    text-align: center;
+}
+.col{
+    background-color: rgb(238, 183, 159);
+}
+.h2{
+    text-align: center;
+    margin-top: 10px;
+}
+#pay:hover{
+    cursor: pointer;
+    color: rgb(246, 244, 244);
+}
+#pay{
+    color: black;
+    background-color: red;
+}
+#order{
+    color: black;
+    background-color: green;
+}
+#order:hover{
+    cursor: pointer;
+    color: rgb(246, 244, 244);
+}
